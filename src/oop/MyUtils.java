@@ -51,8 +51,8 @@ public class MyUtils {
     public static double[] ozelFormulHesapla_2(int[] arr) {
         double[] ret = new double[arr.length];
         for (int i = 0; i < arr.length; i++) {
-            ret[i]=(1/(1+Math.exp(arr[i])));
-//            ret[i]=(1/(1+Math.pow(Math.E,arr[i])));
+//            ret[i]=(1/(1+Math.exp(arr[i])));
+            ret[i]=(1/(1+Math.pow(Math.E,arr[i])));
         }
         return ret;
     }
